@@ -71,65 +71,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-contant" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/03/07/contant/" class="article-date">
-  <time class="dt-published" datetime="2022-03-07T03:01:30.038Z" itemprop="datePublished">2022-03-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="这是我的一级标题"><a href="#这是我的一级标题" class="headerlink" title="这是我的一级标题"></a>这是我的一级标题</h1><h2 id="这是我的二级标题"><a href="#这是我的二级标题" class="headerlink" title="这是我的二级标题"></a>这是我的二级标题</h2><p>这是正文，还可以。</p>
-<p><strong>另起一段还不错</strong></p>
-<ol>
-<li>哈哈哈</li>
-<li>自动编号喽<ol>
-<li>这是真的方便呀</li>
-</ol>
-</li>
-</ol>
-<p>结束列表</p>
-<h3 id="这是我的三级标题"><a href="#这是我的三级标题" class="headerlink" title="这是我的三级标题"></a>这是我的三级标题</h3><p><img src="/2022-03-07-10-25-42.png"><br><em>惠惠</em></p>
-<h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>$$<br>\lim_{x \to \infin}\frac{sin(x)}{x}-1<br>$$<br>支持Latex编辑</p>
-<p>在一段文字中插入公式$lim_{x \to \infin}\frac{sin(x)}{x}$</p>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>使用Alt+shift+f进行表格标准化</p>
-<table>
-<thead>
-<tr>
-<th>小A</th>
-<th align="center">小B</th>
-<th>小C</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>怠惰</td>
-<td align="center">不安</td>
-<td>贪婪</td>
-</tr>
-</tbody></table>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>这是一个[链接]，教我怎么用vscode进行文本编辑(<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1si4y1472o?from=search&amp;seid=3932066566270823322&amp;spm_id_from=333.337.0.0">https://www.bilibili.com/video/BV1si4y1472o?from=search&amp;seid=3932066566270823322&amp;spm_id_from=333.337.0.0</a>)</p>
-<h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">permutation</span><span class="params">(<span class="type">int</span> depth)</span>&#123;</span><br><span class="line"><span class="keyword">if</span>(depth==max+<span class="number">1</span>)&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= max;i++)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, <span class="built_in">array</span>[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//遍历n个数，没用过将之放进array里面，然后置1，表示已经用过，直到最终生成一个全排列</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= max;i++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(temp[i]==<span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">array</span>[depth] = i;<span class="comment">//</span></span><br><span class="line">        temp[i] = <span class="number">1</span>; <span class="comment">//标记该数字已经用过。</span></span><br><span class="line">        permutation(depth + <span class="number">1</span>);<span class="comment">//该处产生递归，层层深入会直接生成一个全排列输出，生成全排列后层层返回</span></span><br><span class="line">        temp[i] = <span class="number">0</span>; <span class="comment">// 这一步比较难理解，每一层permutation return 之后进入这一步，将最后一次使用的数字置零，是一个回溯的步骤</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/07/contant/" data-id="cl0g4awsa00000ovp64h83z9u" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/03/06/hello-world/" class="article-date">
@@ -210,10 +151,6 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2022/03/07/contant/">(no title)</a>
-          </li>
         
           <li>
             <a href="/2022/03/06/hello-world/">Hello World</a>
